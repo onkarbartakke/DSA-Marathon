@@ -32,7 +32,7 @@ void Traverse(Node *root, int level, int *maxlevel, vector<int> &ans)
         Traverse(root->right, level + 1, maxlevel, ans);
     }
 }
-vector<int> rightView(Node *root)
+vector<int> leftView(Node *root)
 {
     // Your Code here
     vector<int> ans;

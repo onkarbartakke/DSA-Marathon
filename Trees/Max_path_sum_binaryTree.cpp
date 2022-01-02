@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include<climits>
 #include <vector>
 using namespace std;
 
@@ -50,7 +50,19 @@ int maxPathSum(BinaryTree tree)
 
 //in other words
 
-int Max_sum_path(Node *p,int& result)
+class Node
+{
+    public:
+    int data;
+    Node *lchild;
+    Node *rchild;
+    Node(int x=0)
+    {
+        data = x;
+    }
+};
+
+int Max_sum_path(Node *p, int& result)
 {
     if(!p)
     return 0;

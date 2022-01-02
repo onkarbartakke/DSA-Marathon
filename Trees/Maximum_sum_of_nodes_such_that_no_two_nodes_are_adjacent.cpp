@@ -33,10 +33,10 @@ int maxgrandChildsum(Node *root, unordered_map<Node*, int>&mp)
 
     int sum = 0;
     if(root->left)
-    sum+=getMaxSumUntil(root->left->left,mp)+getMaxSumUntil(root->left->right);
+    sum+=getMaxSumUntil(root->left->left,mp)+getMaxSumUntil(root->left->right,mp);
 
     if(root->right)
-    sum+=getMaxSumUntil(root->right->left,mp)+getMaxSumUntil(root->right->right);
+    sum+=getMaxSumUntil(root->right->left,mp)+getMaxSumUntil(root->right->right,mp);
 
     return sum;
 
@@ -58,7 +58,7 @@ int getMaxSumUntil(Node *root, unordered_map<Node*, int>&mp)
 
     int include=root->data+maxgrandChildsum(root,mp);
 
-    int exclude=getMaxSumUntil(root->left)+getMaxSumUntil(root->right);
+    int exclude=getMaxSumUntil(root->left,mp)+getMaxSumUntil(root->right,mp);
 
     mp[root]=max(include,exclude);
 
@@ -74,7 +74,7 @@ int getMaxSum(Node *root)
 
     int include=(root->data)+maxgrandChildsum(root,mp);
 
-    int exclude=getMaxSumUntil(root->left,mp)+getMaxSumUntil(root->right,mp)
+    int exclude=getMaxSumUntil(root->left,mp)+getMaxSumUntil(root->right,mp);
 
     return max(include,exclude);
 }
