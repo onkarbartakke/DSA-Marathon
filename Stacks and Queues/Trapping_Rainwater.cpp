@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int Trapped_RainWater(vector<int>&height, int n)
+int Trapped_RainWater(vector<int>&a, int n)
 {
     stack<int>st;
     int i,j;
