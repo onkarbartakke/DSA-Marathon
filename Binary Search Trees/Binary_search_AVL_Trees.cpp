@@ -13,7 +13,7 @@ class Node
         int height;
         Node(int d=0)
         {
-            this->data=d;
+            this->data=d; 
             this->rchild=NULL;
             this->lchild=NULL;
             this->height=1;
