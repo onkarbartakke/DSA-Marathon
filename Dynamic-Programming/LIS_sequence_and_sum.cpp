@@ -1,5 +1,5 @@
-#include<iostream>
-#include <vector>
+#include<bits/stdc++.h>
+
 using namespace std;
 
 vector<vector<int>> maxSumIncreasingSubsequence(vector<int> array) {

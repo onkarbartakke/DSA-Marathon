@@ -40,7 +40,7 @@ void knpsack_dynamic(int val[],int wt[],int n,int W)
         }
         cout<<"\n";
     }
-
+    cout<<"\n\n";
     int *object;
     object=new int[n];
     for(i=0;i<n;i++)

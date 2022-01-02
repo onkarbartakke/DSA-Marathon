@@ -45,4 +45,7 @@ int main()
 	int l=s.length();
 	int ans=lps(s);    //longest palindromic subsequence
 	cout<<ans;
+
+	
 }
+
