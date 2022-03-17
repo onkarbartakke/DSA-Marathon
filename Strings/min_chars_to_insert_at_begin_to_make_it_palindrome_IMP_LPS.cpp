@@ -40,3 +40,11 @@ int solve(string A) {
 
     return n - lps[m-1];
 }
+
+int main()
+{
+    string A;
+    cin>>A;
+
+    cout<<"\n"<<solve(A);
+}
