@@ -1,11 +1,11 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 
 int hopper(int a[],int n)
 {
     int *jump;
-    int i;
+    int i,j;
     jump=new int [n];
     jump[0]=0;
     if(n==0 || a[0]==0)
@@ -33,6 +33,7 @@ int main() {
     cout<<"Enter num of towers\n";
     cin>>n;
     cout<<"Enter theheight of towers\n";
+    int a[n];
     for(i=0;i<n;i++)
     {
         cin>>a[i];

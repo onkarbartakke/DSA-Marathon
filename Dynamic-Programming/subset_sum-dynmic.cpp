@@ -7,7 +7,7 @@ using namespace std;
 int sum_subset(int a[],int n, int s)
 {
 	int dp[n+1][s+1];
-	
+	int i,j;
 	for(i=0;i<=n;i++)
 	{
 		dp[i][0]=1;
