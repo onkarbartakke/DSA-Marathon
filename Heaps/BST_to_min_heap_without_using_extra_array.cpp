@@ -35,7 +35,7 @@ void BST_to_sortedLL(Node *root, Node **head)
     }
 
     (*head)=root;
-    BST_to_sortedLL(root->left,head)
+    BST_to_sortedLL(root->left,head);
 }
 
 void sortedLL_to_minHeap(Node *head, Node **root)
@@ -87,7 +87,7 @@ void BST_to_minHeap(Node *root)
     BST_to_sortedLL(root,&head);
 
     root=NULL;
-    sortedLL_to_minHeap(head, *root);
+    sortedLL_to_minHeap(head, &root);
 }
 int main()
 {
