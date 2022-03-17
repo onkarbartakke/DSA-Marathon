@@ -24,7 +24,7 @@ Node* FindLCA(Node *r, int m1, int m2)
     return NULL;
     
     if(r->left!=NULL && r->right!=NULL)
-    {
+    { 
         if(r->left->data==m1 && r->right->data==m2)
         return r;
     }
