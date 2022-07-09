@@ -1,7 +1,4 @@
-#include<iostream>
-#include<vector>
-#include<queue>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -79,7 +76,7 @@ int main()
         }
         else
         {
-            cout<<ans<<"\n";
+            cout<<count<<"\n";
         }
     }
 }

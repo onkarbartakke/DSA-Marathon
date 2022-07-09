@@ -1,11 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <climits>
-#include <queue>
-#include <stack>
-#include <map>
-#include <set>
+#include<bits/stdc++.h>
 
 using namespace std;
 

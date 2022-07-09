@@ -1,11 +1,4 @@
-#include <iostream>
-#include <string>
-#include <vector>
-#include <climits>
-#include <queue>
-#include <stack>
-#include <map>
-#include <set>
+#include<bits/stdc++.h>
 
 using namespace std;
 
@@ -75,8 +68,8 @@ int kosaraju(int V, vector<int> adj[])
             count++;
             vector<int>comp;
             DFS1(curr, rev, visited,comp);
-            sort(v.begin(),v.end());
-            ans.push_back(v);
+            sort(comp.begin(),comp.end());
+            ans.push_back(comp);
         }
     }
 

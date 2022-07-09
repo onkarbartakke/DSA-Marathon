@@ -17,7 +17,7 @@ void DFS(int u, vector<int>&low, vector<int>&disc, vector<bool>&AP, vector<int>a
     low[u]=disc[u]=time;
     time++;
 
-    for(auto v : adj[u])
+    for(auto v : adj[u]) 
     {
         if(disc[v]==-1)
         {

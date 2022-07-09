@@ -13,7 +13,7 @@ void APSP(int Cost[][SIZE],int n)
     {
         for(j=0;j<n;j++)
         {   
-            if(cost[i][j]!=0)
+            if(Cost[i][j]!=0)
             G[i][j]=Cost[i][j];
             else
             G[i][j]=INT_MAX;
@@ -43,7 +43,7 @@ void APSP(int Cost[][SIZE],int n)
         {
             if(G[i][j]<0)
             {
-                cout<<"\nNegative Edge wait cycle detected\n\n";
+                cout<<"\nNegative Edge weight cycle detected\n\n";
                 break;
             }
            

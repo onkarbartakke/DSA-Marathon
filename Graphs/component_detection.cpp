@@ -1,22 +1,21 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 
 using namespace std;
 
-int get_comp(vector<vector<int>>&adjlst, int visited[], int curr)
+int get_comp(vector<vector<int>> &adjlst, int visited[], int curr)
 {
-    if(visited[curr])
-    return 0;
+    if (visited[curr])
+        return 0;
 
-    
-    visited[curr]=1;
-    int ans=1;
-    for(auto i : adjlst[curr])
+    visited[curr] = 1;
+    int ans = 1;
+    for (auto i : adjlst[curr])
     {
-        if(visited[i]==0)
+        if (visited[i] == 0)
         {
 
-            ans+=get_comp(adjlst,visited,i);
+            ans += get_comp(adjlst, visited, i);
         }
     }
 
@@ -25,32 +24,32 @@ int get_comp(vector<vector<int>>&adjlst, int visited[], int curr)
 
 int main()
 {
-    int i,j,v,e,x,y;
+    int i, j, v, e, x, y;
 
-    cout<<"Enter the num of Vertices and Edges : ";
-    cin>>v>>e;
+    cout << "Enter the num of Vertices and Edges : ";
+    cin >> v >> e;
 
-    vector<vector<int>>adjlst(v);
+    vector<vector<int>> adjlst(v);
 
-    cout<<"\nEnter the Edges : ";
+    cout << "\nEnter the Edges : ";
 
-    for(i=0;i<e;i++)
+    for (i = 0; i < e; i++)
     {
-        cin>>x>>y;
+        cin >> x >> y;
 
-        //x -- y
+        // x -- y
         adjlst[x].push_back(y);
         adjlst[y].push_back(x);
     }
 
-    int visited[v]={0};
-    vector<int>components;
+    int visited[v] = {0};
+    vector<int> components;
 
-    for(i=0;i<v;i++)
+    for (i = 0; i < v; i++)
     {
-        if(visited[i]==0)
+        if (visited[i] == 0)
         {
-            int size=get_comp(adjlst,visited,i);
+            int size = get_comp(adjlst, visited, i);
             components.push_back(size);
         }
     }

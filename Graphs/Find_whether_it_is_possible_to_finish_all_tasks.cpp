@@ -22,7 +22,7 @@ bool Finish_all(int V , vector<vector<int>>&adj, vector<int>&incoming)
         qu.push(i);
     }
     vector<int>T(V+1);
-    int count++;
+    int count= 0 ;
     while(!qu.empty())
     {     
         int u=qu.front();

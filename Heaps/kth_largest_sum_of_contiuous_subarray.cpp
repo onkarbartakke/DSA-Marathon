@@ -54,7 +54,7 @@ int main()
         cin>>a[i];
     }
 
-    int k=kth_largest_subarray(a,n);
+    int k=kth_largest_subarray(a,n,k);
 
     cout<<"\n"<<k;
 }

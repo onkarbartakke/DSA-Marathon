@@ -35,6 +35,8 @@ bool Present_in_subtree(int x, int y, vector<int>&InTime, vector<int>&OutTime)
 	else
 	return false;
 }
+
+
 int main()
 {
 	int n,i,j,k,q;

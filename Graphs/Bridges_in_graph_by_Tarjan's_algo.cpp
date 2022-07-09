@@ -36,7 +36,7 @@ void DFS(int u, vector<int>&low, vector<int>&disc, vector<int>adj[] ,vector<int>
 }
 
 
-void Bridges(int V, vector<int>&adj[])
+void Bridges(int V, vector<int>adj[])
 {
     int i;
     vector<int>disc(V,-1);

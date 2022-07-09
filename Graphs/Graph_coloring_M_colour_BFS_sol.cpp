@@ -3,7 +3,7 @@
 #include<algorithm>
 #include<queue>
 #include<set>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 class Node
@@ -68,7 +68,7 @@ int main()
    bool graph[101][101];
    cout<<"Enter thr num of Vertices : ";
    cin>>V;
-   cout<"\nEnter the Graph : \n";
+   cout<<"\nEnter the Graph : \n";
 
    for(i=0;i<V;i++)
    {
