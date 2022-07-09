@@ -6,7 +6,7 @@ There are n points on a road you are driving your taxi on. The n points on the r
 and you want to drive from point 1 to point n to make money by picking up passengers. You cannot change the direction of the taxi.
 
 The passengers are represented by a 0-indexed 2D integer array rides, where rides[i] = [starti, endi, tipi] denotes the ith passenger 
-requesting a ride from point starti to point endi who is willing to give a tipi dollar tip.
+requesting a ride from point start i to point endi who is willing to give a tipi dollar tip.
 
 For each passenger i you pick up, you earn endi - starti + tipi dollars. You may only drive at most one passenger at a time.
 

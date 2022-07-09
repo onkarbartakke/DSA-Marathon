@@ -1,9 +1,5 @@
 // C++ program to divide a board into m*n square
-#include <iostream>
-#include <vector>
-#include <string>
-#include <queue>
-#include <stack>
+#include <bits/stdc++.h>
 
 using namespace std;
 

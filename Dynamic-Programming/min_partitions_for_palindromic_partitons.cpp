@@ -45,6 +45,8 @@ int solve(string s, int l, int r, vector<vector<int>> &dp)
 
     return dp[l][r] = res;
 }
+
+
 int palindromicPartition(string str)
 {
     // code here
