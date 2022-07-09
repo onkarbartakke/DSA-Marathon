@@ -203,6 +203,6 @@ int main()
         cin>>pre[i];
         i++;
     }
-    root1=Create_from_postorder(pre,m);
+    root1=Create_from_preorder(pre,m);
     display_inorder(root1);
 }
