@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void maxValue(vector<int>a)
+int maxValue(vector<int>a, int N)
 {
     long long int n=a.size();
     long long int i,j,presum[n],l[n],r[n];

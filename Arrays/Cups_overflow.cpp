@@ -22,6 +22,7 @@ public:
                 {
                     cups[j + 1] += overflow / 2;
                 }
+                
 
                 cups[j] = overflow / 2;
             }

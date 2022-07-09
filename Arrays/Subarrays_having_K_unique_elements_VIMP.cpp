@@ -55,7 +55,7 @@ public:
 };
 
 /*
-ntuition:
+Intuition:
 First you may have feeling of using sliding window.
 Then this idea get stuck in the middle.
 
