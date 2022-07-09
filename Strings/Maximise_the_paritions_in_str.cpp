@@ -53,7 +53,8 @@ Examples:
 Input : str = “ababcbacadefegdehijhklij” 
 Output : 3 
 Explanation: 
-Partitioning at the index 8 and at 15 produces three substrings “ababcbaca”, “defegde” and “hijhklij” such that none of them have a common character. So, the maximum partitions is 3.
+Partitioning at the index 8 and at 15 produces three substrings “ababcbaca”, “defegde” and “hijhklij” 
+such that none of them have a common character. So, the maximum partitions is 3.
 Input: str = “aaa” 
 Output: 1 
 Explanation: 
