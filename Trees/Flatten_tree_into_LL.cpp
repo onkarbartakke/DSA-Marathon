@@ -20,10 +20,10 @@ class Node
 void flatten(Node *root)
 {
     if(root==NULL)
-    return root;
+    return;
 
     if(root->left==NULL && root->right==NULL)
-   return root;
+   return ;
 
    if(root->left)
    {
