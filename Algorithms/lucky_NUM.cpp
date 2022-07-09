@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
@@ -23,7 +23,7 @@ int main()
     cout<<"Enter the num : ";
     cin>>n;
     cout<<"\n";
-    if(lucky_numn(n))
+    if(lucky_num(n))
     {
         cout<<"its lucky number\n";
     }

@@ -1,6 +1,9 @@
-#include <iostream>
+#include <bits/stdc++.h>
 /*
-Given an array nums of positive integers. Your task is to select some subset of nums, multiply each element by an integer and add all these numbers. The array is said to be good if you can obtain a sum of 1 from the array by any possible subset and multiplicand.
+Given an array nums of positive integers. Your task is to select some subset of nums, 
+
+multiply each element by an integer and add all these numbers.
+ The array is said to be good if you can obtain a sum of 1 from the array by any possible subset and multiplicand.
 
 Return True if the array is good otherwise return False
  */
@@ -16,7 +19,8 @@ int GCD(int a, int b)
 
     return GCD(b, a % b);
 }
-bool isGoodArray(vector<int> &nums)
+
+bool isGoodArray(vector<int>&nums)
 {
 
     int i, prev;
@@ -31,4 +35,11 @@ bool isGoodArray(vector<int> &nums)
     }
 
     return prev == 1;
+}
+
+int main()
+{
+    vector<int>nums(10);
+
+    isGoodArray(nums);
 }

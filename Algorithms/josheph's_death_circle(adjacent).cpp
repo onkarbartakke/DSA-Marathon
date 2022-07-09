@@ -3,6 +3,8 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 using namespace std;
+
+
 int main()
 {
 	int n;
@@ -14,7 +16,7 @@ int main()
 	{
 		m=m/2;
 		count++;
-	}
+	} 
 	count--;
 	cout<<count<<"\n";
 	cout<<pow(2,count)<<"\n";

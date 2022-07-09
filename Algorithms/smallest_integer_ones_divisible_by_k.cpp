@@ -2,7 +2,8 @@
 
 using namespace std;
 /*
-Given a positive integer k, you need to find the length of the smallest positive integer n such that n is divisible by k, and n only contains the digit 1.
+Given a positive integer k, you need to find the length of the smallest positive integer n such that n is divisible by k,
+ and n only contains the digit 1.
 
 Return the length of n. If there is no such n, return -1.
 
