@@ -1,5 +1,5 @@
-#include<iostream>
-#include<stack>
+#include<bits/stdc++.h>
+
 using namespace std;
 
 class Queue
@@ -94,4 +94,72 @@ int main()
     cout<<qu.pop()<<"\n"; 
     cout<<qu.pop()<<"\n"; 
     cout<<qu.pop()<<"\n";  
+}
+
+
+
+bool isSame(string s, string p)
+{
+    if(s.length()!=p.length())
+    return false;
+    
+    vector<int>cnt(26,0);
+    for(int i = 0 ; i < s.length() ; i = i + 2)
+    {
+        cnt[s[i]-'a']++;
+        cnt[p[i]-'a']--;
+    }
+
+    for(int i = 0 ; i < 26 ; i++)
+    {
+        if(cnt[i]!=0)
+        return false;
+    }
+
+
+    for(int i = 1; i < s.length() ; i = i + 2)
+    {
+        cnt[s[i] - 'a']++;
+        cnt[p[i]-'a']--;
+    }
+
+    for(int i = 0 ; i < 26 ; i++)
+    {
+        if(cnt[i]!=0)
+        return false;
+    }
+
+    return true;
+
+  
+}
+
+
+void check(string s, unordered_set<string>&st)
+{
+    for(auto it : st)
+    {
+        if(s.compare(it) == 0)
+        continue;
+
+        if(isSame(s,it))
+        st.erase(it);
+    }
+}
+
+int distinctPasswords(int n , string a[])
+{
+    unordered_set<string>st;
+
+    for(int i = 0 ; i < n ; i++)
+    {
+        st.insert(a[i]);
+    }
+
+    for(auto it : st)
+    {
+        check(it,st);
+    }
+
+    return st.size();
 }

@@ -38,6 +38,10 @@ int solve(string A) {
         lps[i] = j;
     }
 
+    cout<<pal<<"\n\n";
+
+    for(auto it : lps)
+    cout<<it<<" ";
     return n - lps[m-1];
 }
 

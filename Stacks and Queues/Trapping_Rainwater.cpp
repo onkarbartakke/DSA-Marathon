@@ -30,7 +30,7 @@ int Trapped_RainWater(vector<int>&a, int n)
 
         st.push(i);
     }
-
+ 
     return ans;
 }
 

@@ -49,10 +49,12 @@ void update(int ind, int i, int val, vector<int> &seg, int low, int high)
     if (i <= mid)
         update(2 * ind + 1, i, val, seg, low, mid);
     else
-        update(2 * ind + 2, i, val, seg, mid+1, high);
+        update(2 * ind + 2, i, val, seg, mid + 1, high);
 
     seg[ind] = min(seg[2 * ind + 1], seg[2 * ind + 2]);
 }
+
+
 int main()
 {
     int n, i;
@@ -62,22 +64,22 @@ int main()
 
     vector<int> arr(n);
 
-    for(int i=0;i<n;i++)
-    cin>>arr[i];
+    for (int i = 0; i < n; i++)
+        cin >> arr[i];
 
-    cout<<"\n\n";
-    for(auto it : arr)
-    cout<<it<<" ";
+    cout << "\n\n";
+    for (auto it : arr)
+        cout << it << " ";
     vector<int> seg(4 * n, -1);
 
     Build(arr, 0, n - 1, 0, seg);
 
-    cout<<"\nSegment Tree is : \n";
+    cout << "\nSegment Tree is : \n";
 
-    for(auto it : seg)
+    for (auto it : seg)
     {
-        if(it!=-1)
-        cout<<it<<" ";
+        if (it != -1)
+            cout << it << " ";
     }
 
     cout << "\n\nEnter the Number of queries : ";
