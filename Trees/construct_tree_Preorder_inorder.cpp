@@ -103,7 +103,16 @@ void Display_levelorder(Node *p)
     }
 }
 
+void Display_postorder(Node *r)
+{
+    if(r == NULL)
+    return;
 
+    Display_postorder(r->lchild);
+    Display_postorder(r->rchild);
+    cout<<r->data<<" ";
+    return;
+}
 int main()
 {
     int n,i;
@@ -134,5 +143,8 @@ int main()
     
     cout<<"Level order : \n";
     Display_levelorder(root);
+
+    cout<<"Post Order : \n";
+    Display_postorder(root);
     
 }
