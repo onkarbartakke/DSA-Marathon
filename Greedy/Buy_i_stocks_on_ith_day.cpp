@@ -1,17 +1,12 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <queue>
-#include <stack>
+#include<bits/stdc++.h>
 
 using namespace std;
 
 // CPP program to find maximum number of stocks that
 // can be bought with given constraints.
 
-
 /*
-So, we will sort the pair of two values i.e { stock price, day } according to the stock price, and if stock prices are same, 
+So, we will sort the pair of two values i.e { stock price, day } according to the stock price, and if stock prices are same,
 then we sort according to the day.
 Now, we will traverse along the sorted list of pairs, and start buying as follows:
 Let say, we have R rs remaining till now, and the cost of product on this day be C, and we can buy atmost L products on this day then,

@@ -26,10 +26,10 @@ void DFS(int u, vector<int>&low, vector<int>&disc, vector<bool>&AP, vector<int>a
             DFS(v,low,disc,AP,adj,parent);
             low[u]=min(low[u],low[v]);
 
-            if(parent[u]==-1 && children>1) //Case 1
+            if(parent[u]==-1 && children>1) //Case 1 u is root node
             AP[u]=true;
 
-            if(parent[u]!=-1 && low[v]>=disc[u]) //Case 2
+            if(parent[u]!=-1 && low[v]>=disc[u]) //Case 2 there is no backedge
             AP[u]=true;
         }
         else if(parent[u]!=v)

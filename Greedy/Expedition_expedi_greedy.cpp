@@ -1,85 +1,83 @@
-#include<iostream>
-#include<vector>
-#include<queue>
-
+#include <bits/stdc++.h>
+#include<bits/stdc++.h>
 using namespace std;
 
 int main()
 {
     int t;
-    cin>>t;
-    while(t--)
+    cin >> t;
+    while (t--)
     {
-        int i,j,l,p,n;
-        cin>>n;
-        vector< pair<int,int> >V(n);
-        
-        for(i=0;i<n;i++)
+        int i, j, l, p, n;
+        cin >> n;
+        vector<pair<int, int>> V(n);
+
+        for (i = 0; i < n; i++)
         {
-            cin>>V[i].first>>V[i].second;
+            cin >> V[i].first >> V[i].second;
         }
 
-        cin>>l>>p;
+        cin >> l >> p;
 
-        for(i=0;i<n;i++)
+        for (i = 0; i < n; i++)
         {
-            V[i].first=l-V[i].first;
+            V[i].first = l - V[i].first;
         }
 
-        sort(V.begin(),V.end());
+        sort(V.begin(), V.end());
 
-        priority_queue<int, vector<int> >maxheap;
-        int d=0;
-        int count=0;
-        bool flag=0;
-        int curr=p;
-        for(i=0;i<n;i++)
+        priority_queue<int, vector<int>> maxheap;
+        int d = 0;
+        int count = 0;
+        bool flag = 0;
+        int curr = p;
+        for (i = 0; i < n; i++)
         {
-            if(curr>=l)
-            break;
+            if (curr >= l)
+                break;
 
-            while(curr<V[i].first)
+            while (curr < V[i].first)
             {
-                if(maxheap.empty())
+                if (maxheap.empty())
                 {
-                    flag=1;
+                    flag = 1;
                     break;
                 }
                 else
                 {
                     count++;
-                    curr+=maxheap.top();
+                    curr += maxheap.top();
                     maxheap.pop();
                 }
             }
 
-            if(flag)
-            break;
+            if (flag)
+                break;
 
             maxheap.push(V[i].second);
         }
 
-        if(flag)
+        if (flag)
         {
-            cout<<"-1\n";
+            cout << "-1\n";
             continue;
         }
 
-        while(!maxheap.empty() && curr<l)
+        while (!maxheap.empty() && curr < l)
         {
-            curr+=maxheap.top();
+            curr += maxheap.top();
             count++;
             maxheap.pop();
         }
 
-        if(curr<l)
+        if (curr < l)
         {
-            cout<<"-1\n";
+            cout << "-1\n";
             continue;
         }
         else
         {
-            cout<<ans<<"\n";
+            cout << count << "\n";
         }
     }
 }

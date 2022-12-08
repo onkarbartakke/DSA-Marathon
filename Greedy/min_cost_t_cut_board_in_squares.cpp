@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 // method returns minimum cost to break board into
 // m*n squares
 int minimumCostOfBreaking(int X[], int Y[], int m, int n)
@@ -60,8 +59,8 @@ int minimumCostOfBreaking(int X[], int Y[], int m, int n)
 int main()
 {
 	int m = 6, n = 4;
-	int X[m-1] = {2, 1, 3, 1, 4};
-	int Y[n-1] = {4, 1, 2};
-	cout << minimumCostOfBreaking(X, Y, m-1, n-1);
+	int X[m - 1] = {2, 1, 3, 1, 4};
+	int Y[n - 1] = {4, 1, 2};
+	cout << minimumCostOfBreaking(X, Y, m - 1, n - 1);
 	return 0;
 }

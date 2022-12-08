@@ -6,10 +6,9 @@
 
 using namespace std;
 
-
 class Node
 {
-    public:
+public:
     char data;
     int freq;
     bool isLeaf;
@@ -33,11 +32,11 @@ class Node
 
 class mycomp
 {
-    public:
+public:
     bool operator()(Node *a, Node *b)
     {
         return (a->freq > b->freq);
-        //For Min Heap
+        // For Min Heap
     }
 };
 
@@ -49,7 +48,7 @@ void preorder(Node *t, string s, vector<string> &ans)
     if (t->isLeaf)
     {
         ans.push_back(s);
-        
+
         return;
     }
 

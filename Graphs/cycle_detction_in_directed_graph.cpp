@@ -137,3 +137,23 @@ If in-degree of a neighboring nodes is reduced to zero, then add it to the queue
 Step 4: Repeat Step 3 until the queue is empty.
 Step 5: If count of visited nodes is not equal to the number of nodes in the graph has cycle, otherwise not.
 */
+
+/*
+There was a time when I and that person used to study together in lib
+I really loved and valued the compnay of that person.
+
+But mala te neet sambhatach aale nahi. Lai vait wattat kadi kadi, ky chuk hoti mazi?
+
+Kadi me tila force kel??
+Maz swthach man kiti vela me maarle,
+
+Thodi pn janiv re, lai kahi harsh kathor bolun geli aahe ti.
+Ti nahi yenar parat, aali tari ti ky bolnar aahe??
+Tine mazi kadich value thevali nahi aani aata hi nahi thevnar..
+khup kavra bavra zalo hoto re, laai insecure watate hot jeva tine tich wagne change kel.
+tyacha to output hota, nahi aale mala majya manawar niyantran thevayla, aani as she didn't value me tine nahi
+kela maza vichar, ekdam painful vait bolun geli ti.
+
+
+
+*/

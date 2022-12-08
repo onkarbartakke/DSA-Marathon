@@ -1,5 +1,5 @@
 
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
 // CPP to design platform for maximum stoppage
