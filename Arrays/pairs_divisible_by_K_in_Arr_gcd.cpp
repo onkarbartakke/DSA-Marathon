@@ -9,7 +9,7 @@ nums[i] * nums[j] is divisible by k.
 */
 class Solution
 {
-    public:
+public:
     long long countPairs(vector<int> &nums, int k)
     {
 
