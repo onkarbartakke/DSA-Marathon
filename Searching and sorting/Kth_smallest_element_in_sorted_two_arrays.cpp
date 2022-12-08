@@ -65,7 +65,7 @@ int main()
     cout << "\nKth smallest Element is " << Kth_smallest(a1, a2, e1, e2, k);
 }
 
-//Striver Approach
+// Striver Approach
 
 int kthElement(int arr1[], int arr2[], int n, int m, int k)
 {
@@ -100,3 +100,9 @@ int kthElement(int arr1[], int arr2[], int n, int m, int k)
     }
     return 1;
 }
+
+class Solution
+{
+public:
+  
+};
