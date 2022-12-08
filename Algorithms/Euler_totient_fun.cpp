@@ -20,7 +20,7 @@ int main()
             for(j=2*i;j<N;j=j+i)
             {
                 totient[j]*=(i-1);
-                totient[j]/=i;
+                totient[j]/=i; 
             } 
 
             totient[i]=i-1;  
